@@ -7,15 +7,13 @@
     background: linear-gradient(360deg, #6CB754 0%, #374729 100%);
 }
 
-.container-fluid {
-    width: 100%;
-    height: 100%;
+.container-nav {
+    
     padding-left: 160px;
     padding-right: 160px; 
     justify-content: center;
     align-items: center;
     gap: 80px;
-    display: inline-flex;
 }
 
 .logo, .menu, .button {
@@ -65,7 +63,6 @@
 
 }
 
-
 .menu-item > div, .button-nav > div {
     color: white;
     font-size: 16px;
@@ -79,9 +76,37 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+_______________________________________________________________________________
 
-.bg-hero {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+.margin-hero {
+    padding: 300;
 }
+
+.content-hero {
+
+    flex-direction: column;
+    
+}
+
+.title {
+    color: #010101;
+    font-size: 36px;
+    font-family: Recursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.subtitle {
+    width: 480px;
+    color: #010101;
+    font-size: 24px;
+    font-family: Recursive;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+
+        
