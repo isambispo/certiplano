@@ -1,8 +1,12 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
+.gradient-bg {
+    background: linear-gradient(360deg, #6CB754 0%, #374729 100%);
+}
+ 
 .navbar {
     background: linear-gradient(360deg, #6CB754 0%, #374729 100%);
 }
@@ -76,16 +80,22 @@
     font-weight: 700;
     text-transform: uppercase;
 }
-_______________________________________________________________________________
+
 
 .margin-hero {
     padding: 300;
 }
 
 .content-hero {
-
+    height: 100vh;
     flex-direction: column;
     
+}
+
+.size-content {
+    top: 10% !important; 
+    left: 10%;
+    width: 50%;
 }
 
 .title {
@@ -108,5 +118,8 @@ _______________________________________________________________________________
     word-wrap: break-word;
 }
 
+.bg-section2 {
+    width: 90%;
+}
 
         
