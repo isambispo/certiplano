@@ -86,7 +86,7 @@
     padding: 300;
 }
 
-.content-hero {
+.content-infos {
     height: 100vh;
     flex-direction: column;
     
@@ -118,8 +118,36 @@
     word-wrap: break-word;
 }
 
+.title-ceo {
+    color: #ffffff;
+    font-size: 36px;
+    font-family: Recursive;
+    font-weight: 800;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.parag-ceo {
+    
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Recursive;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
 .bg-section2 {
     width: 90%;
+    
 }
 
         
+.ceo {
+    max-width: 635px;
+}
+
+.card-1 {
+    width: 20%;
+}
