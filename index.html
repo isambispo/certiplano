@@ -14,6 +14,26 @@
 
         <link rel="stylesheet" href="assets/scr/css/style.css">
 
+        <script>
+            (function (w, d, s, o, f, js, fjs) {
+              w["botsonic_widget"] = o;
+              w[o] =
+                w[o] ||
+                function () {
+                  (w[o].q = w[o].q || []).push(arguments);
+                };
+              (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+              js.id = o;
+              js.src = f;
+              js.async = 1;
+              fjs.parentNode.insertBefore(js, fjs);
+            })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+            Botsonic("init", {
+              serviceBaseUrl: "https://api-azure.botsonic.ai",
+              token: "f776be7e-e636-4bd3-8284-ba54008c339c",
+            });
+          </script>
+
     </head>
     <body class="gradient-bg">
 
@@ -41,10 +61,11 @@
                         <div>Parceria</div>
                     </a>
                 </div>
-                <button type="button" class="button button-nav p-3">
-                    <div>Acessar plataforma</div>
-                </button>
-
+                <form action="https://intranet.certiplano.pt/login">
+					<button type="submit" class="button button-nav p-3">
+						<div>Acessar plataforma</div>
+					</button>
+				</form>
             </div>
         </nav>
 
