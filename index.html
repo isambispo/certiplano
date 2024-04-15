@@ -12,6 +12,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+        
+
         <link rel="stylesheet" href="assets/scr/css/style.css">
 
         <script>
@@ -38,136 +40,147 @@
     <body class="gradient-bg">
 
         <!--Nav-->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-nav container-fluid">
+        <nav class="navbar navbar-expand-md nav-gradiente">
+            <div class="container">
+                    
+                <a href="index.html" class="mx-lg-5 px-lg-5 navbar-brand">
+                    <img src="assets/img/logo-nav.png" alt="Logo Certiplano" class="img-fluid" width="200">
+                </a>
+            
+                <!--Botão responsivo para mobile--> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navresponsive" aria-controls="navresponsive" aria-label="Nav Responsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <!--Menu responsivo para mobile-->    
+                <div class="offcanvas offcanvas-end bg374729 d-inline-flex" tabindex="-1" id="navresponsive" aria-labelledby="navresponsivelabel">
+                    
+                    <div class="offcanvas-header justify-content-end align-items-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
 
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo-nav.png" alt="logo-certiplano" width="160">
-                    </a>
+                    <div class="offcanvas-body justify-content-md-center align-items-md-center ">
+                        <ul class="navbar-nav flex-grow-1 pe-3">
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff activo px-lg-4" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff px-lg-4" href="Serviços1.html">Serviços</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff px-lg-4" href="Contactos.html">Contacto</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff px-lg-4" href="Parceria.html">Parceria</a>
+                            </li>
+                    </div>
+
+                    <form action="https://intranet.certiplano.pt/login">
+                        <button type="submit" class="button button-nav mx-5 p-3 d-sm-block d-md-none">
+                            <div>Acessar plataforma</div>
+                        </button>
+                    </form>
                 </div>
-                
-                <div class="menu">
-                    <a href="index.html" class="menu-item">
-                        <div>Home</div>
-                    </a>
-                    <a href="Serviços1.html" class="menu-item">
-                        <div>Serviços</div>
-                    </a>
-                    <a href="Contactos.html" class="menu-item">
-                        <div>Contacto</div>
-                    </a>
-                    <a href="Parceria.html" class="menu-item">
-                        <div>Parceria</div>
-                    </a>
-                </div>
+
                 <form action="https://intranet.certiplano.pt/login">
-					<button type="submit" class="button button-nav p-3">
-						<div>Acessar plataforma</div>
-					</button>
-				</form>
+                    <button type="submit" class="button button-nav mx-5 p-3 d-none d-md-block">
+                        <div>Acessar plataforma</div>
+                    </button>
+                </form>
+                
             </div>
         </nav>
 
         <!--Section 1 - Hero-->
-        <section class="d-flex">
+        <section>
 
-            <img class="img-fluid" src="assets/img/img-hero.png" alt="BG hero" style="object-fit: cover;">
+            <div class="card">
+                <img src="assets/img/img-hero.png" alt="bg hero" class="img-fluid object-fit-cover card-img">
 
-            <div class="container row position-absolute m-5">
+                <div class="row card-img-overlay m-5">
+                    <div class="container col-8 d-flex flex-column">
+                        <span class="font-800 color1d1d1d mt-5 pb-2">certiplano</span>
+                        <span class="font-400 color1d1d1d">O Seu Guia de Certificação Energética,</span>
+                        <span class="font-400 color1d1d1d">Hídrica para Edifícios Mais Eficientes</span>
+                        <span class="font-400 color1d1d1d"> e Sustentáveis</span>
+                    </div>
 
-                <div class="justify-content-center align-items-center d-flex flex-column p-5 col-lg-6 col-12 m-5">
-                    <span class="title mt-5 pb-2">certiplano</span>
-                    <span class="subtitle">O Seu Guia de Certificação Energética,</span>
-                    <span class="subtitle">Hídrica para Edifícios Mais Eficientes</span>
-                    <span class="subtitle"> e Sustentáveis</span>
-                </div>
-            </div>
-
-                 
-            
-        
+                </div>                       
         </section>
 
         <!--Section 2 - Serviços-->
-        <section class="d-flex">
+        <section class="clearfix">
 
-            <div class="gradient-bg">
-                <img src="assets/img/bgverde-e.svg" alt="bg" class="bg-section2 img-fluid">
-            </div>
+            <div class="card gradient-bg">
+                <img src="assets/img/bgverde-e.svg" class="card-img bg-section object-fit-cover" alt="bg">
 
-            <div  class="container row position-absolute align-items-center justify-content-center m-5">
+
+                <div class="card-img-overlay container p-5">
+                    <span class="font-800 color1d1d1d m-lg-5 p-lg-5">
+                        Como podemos ajudar?
+                    </span>
+                </div>
+
+                <div  class="card-img-overlay container position-absolute align-items-center justify-content-center m-5">
 
             
-                <div class="align-items-center justify-content-center m-5 p-5">
-                    <a href="Serviços2.html" class="col-lg-3 col-12 text-decoration-none p-3">
-                        <img src="assets/img/card-servicos-1.svg" alt="card 1" class="card-1">
-                    </a>
-                    <a href="Serviços2.html" class="col-lg-3 col-12 text-decoration-none p-3">
-                        <img src="assets/img/card-servicos-2.svg" alt="card 2" class="card-1">
-                    </a>
-                    <a href="Serviços2.html" class="col-lg-3 col-12 text-decoration-none p-3">
-                        <img src="assets/img/card-servicos-3.svg" alt="card 3" class="card-1">
-                    </a>
-                    <a href="Serviços2.html" class="col-lg-3 col-12 text-decoration-none p-3">
-                        <img src="assets/img/card-servicos-4.svg" alt="card 4" class="card-1">
-                    </a>
+                    <div class="align-items-center justify-content-center m-5 p-5 row">
+                        <a href="Serviços2.html" class="col-lg-3 col-6 text-decoration-none p-3">
+                            <img src="assets/img/card-servicos-1.svg" alt="card 1" class="card-1">
+                        </a>
+                        <a href="Serviços2.html" class="col-lg-3 col-6 text-decoration-none p-3">
+                            <img src="assets/img/card-servicos-2.svg" alt="card 2" class="card-1">
+                        </a>
+                        <a href="Serviços2.html" class="col-lg-3 col-6 text-decoration-none p-3">
+                            <img src="assets/img/card-servicos-3.svg" alt="card 3" class="card-1">
+                        </a>
+                        <a href="Serviços2.html" class="col-lg-3 col-6 text-decoration-none p-3">
+                            <img src="assets/img/card-servicos-4.svg" alt="card 4" class="card-1">
+                        </a>
+                    </div>
                 </div>
-                
             </div>
-
-        </section>
+        </section>   
 
         <!--Section 3 - CEO-->
-        <section class="d-flex">
+        <section class="clearfix">
 
-            <div>
-                <img src="assets/img/bg-ceo.png" alt="bg-ceo" class="img-fluid">
-            </div>
-
-            <div class="container row position-absolute">
-                
-                <div class="col-md-7 col-12 d-flex flex-column p-5">
-                    <span class="title-ceo p-5">
-                        Conheça nosso CEO
-                    </span>
-                    <span class="parag-ceo p-4">
-                        A actuação da Certiplano no mercado, confunde-se com a do próprio CEO, Hélio Vieira e surge logo no início da implementação da certificação energética em Portugal, em 2006. Em uma primeira fase, dedicou-se à área de projecto, com vários estudos de comportamento térmico, evoluindo,pouco depois para a certificação energética propriamente dita.
-                        Surgiu no Norte do Pais, mais concretamente no Porto, deslocando-se em 2009 para a zona centro do país, em Leiria, e mais recentemente alargado a sua zona de actuação para quase todo o território nacional.
-                        Ao longo de todo este trajecto tem-se  destacado  pela sua forte capacidade de resposta a preços competitivos, sempre com o foco no seu principal parceiro, o mercado imobiliário.
-                        Tem vindo igualmente a alargar a sua vertente de projecto especializado no comportamento térmico de edificios habitacionais e de serviços.
-                        Actualmente, assume-se ainda como uma forte alternativa na Certificação Hidrica de edifícios habitacionais e unidades hoteleiras, possuindo vários técnicos qualificados para o efeito.
-                    </span>
+            <div class="card gradient-bg">
+                <div>
+                    <img src="assets/img/bg-ceo.png" alt="bg-ceo" class="card-img img-fluid object-fit-cover">
                 </div>
-                <div class="col-md-5 col-12">
-                    <img src="assets/img/Helio.png" alt="ceo" class="ceo">
-                </div>
-
+    
+                <div class="container row card-img-overlay">
+                    
+                    <div class="col-md-7 col-12 d-flex flex-column p-5">
+                        <span class="title-ceo p-5">
+                            Conheça nosso CEO
+                        </span>
+                        <span class="parag-ceo p-4">
+                            A actuação da Certiplano no mercado, confunde-se com a do próprio CEO, Hélio Vieira e surge logo no início da implementação da certificação energética em Portugal, em 2006. Em uma primeira fase, dedicou-se à área de projecto, com vários estudos de comportamento térmico, evoluindo,pouco depois para a certificação energética propriamente dita.
+                            Surgiu no Norte do Pais, mais concretamente no Porto, deslocando-se em 2009 para a zona centro do país, em Leiria, e mais recentemente alargado a sua zona de actuação para quase todo o território nacional.
+                            Ao longo de todo este trajecto tem-se  destacado  pela sua forte capacidade de resposta a preços competitivos, sempre com o foco no seu principal parceiro, o mercado imobiliário.
+                            Tem vindo igualmente a alargar a sua vertente de projecto especializado no comportamento térmico de edificios habitacionais e de serviços.
+                            Actualmente, assume-se ainda como uma forte alternativa na Certificação Hidrica de edifícios habitacionais e unidades hoteleiras, possuindo vários técnicos qualificados para o efeito.
+                        </span>
+                    </div>
+                 </div>
             </div>
-
         </section>
 
         <!--Section 4 - Parceiros-->
-        <section class="d-flex">
+        <section class="clearfix">
 
-            <div class="gradient-bg">
-                <img src="assets/img/detalheverdeduploe-bg.svg" alt="bg-duplo" class="bg-section2 img-fluid">
-            </div>
+            <div class="card">   
 
-            <div class="position-absolute">
-                <div class="row container-fluid justify-content-center mx-5">
-                    <div class="col-lg-8 col-12 d-flex flex-row align-items-center mt-5">
-                        <img src="assets/img/parceiro-1.png" alt="parceiro-1" class="img-fluid p-5 my-5">
-                        <img src="assets/img/parceiro-2.png" alt="parceiro-2" class="img-fluid p-5 my-5">
-                        <img src="assets/img/parceiro-3.png" alt="parceiro-3" class="img-fluid p-5 my-5">
-                    </div>
+                <div class="gradient-bg">
+                    <img src="assets/img/detalheverdeduplohero-bg.png" alt="bg-duplo" class="card-img bg-section img-fluid">
                 </div>
-    
-                <div class="row container justify-content-center mx-5">
-                    <div class="col-lg-6 col-12 d-flex flex-row align-items-center mb-5">
-                        <img src="assets/img/parceiro-4.png" alt="parceiro-4" class="img-fluid p-5 ">
-                        <img src="assets/img/parceiro-5.png" alt="parceiro-5" class="img-fluid p-5 ">
-                    </div>
+
+                <div class="card-img-overlay container p-5 m-5">
+                    <span class="font-800 color1d1d1d m-lg-5 p-lg-5">
+                        Parceiros
+                    </span>
                 </div>
             </div>
 
@@ -175,15 +188,15 @@
 
         </section>
 
-        <!--Footer-->
-        <footer>
+         <!--Footer-->
+         <footer>
 
-            <div class=" container justify-content-center align-items-center mb-2">
-                <img src="assets/img/footer-1.png" alt="footer1" class="p-3 mx-4">
-                <img src="assets/img/footer-2.png" alt="footer2" class="p-3 mx-4">
-                <img src="assets/img/footer-3.png" alt="footer3" class="p-3 mx-4">
-                <img src="assets/img/footer-4.png" alt="footer4" class="p-3 mx-4">
-                <img src="assets/img/footer-5.png" alt="footer5" class="p-3 mx-4">
+            <div class="container justify-content-center align-items-center mb-2">
+                <img src="assets/img/footer-1.png" alt="footer1" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-2.png" alt="footer2" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-3.png" alt="footer3" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-4.png" alt="footer4" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-5.png" alt="footer5" class="img-fluid p-lg-3 mx-lg-4">
             </div>
 
         </footer>

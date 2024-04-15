@@ -1,49 +1,52 @@
+
 * {
     padding: 0;
     margin: 0; 
 }
 
+
 .gradient-bg {
     background: linear-gradient(360deg, #6CB754 0%, #374729 100%);
 }
- 
-.navbar {
+
+/*Color Letras*/
+
+.colorfff {
+    color: #ffffff;
+}
+
+.color1d1d1d {
+    color: #1d1d1d;
+}
+
+/*Cor Background*/
+
+.bg374729 {
+ background-color: #374729;
+}
+
+
+/*Títulos de páginas*/
+
+.font-800{
+    font-size: 40px;
+    font-family: Recursive;
+    font-weight: 800;
+    text-transform: uppercase;
+ }
+
+ /*Parágrafos*/
+
+.font-400{
+    font-size: 16px;
+    font-family: Recursive;
+    font-weight: 400;
+ }
+
+/*Nav*/
+
+.nav-gradiente {
     background: linear-gradient(360deg, #6CB754 0%, #374729 100%);
-}
-
-.container-nav {
-    
-    padding-left: 160px;
-    padding-right: 160px; 
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-}
-
-.logo, .menu, .button {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.logo {
-    width: 240px;
-    height: 79.80px;
-}
-
-.menu {
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 45px;
-}
-
-.menu-item {
-    width: auto;
-    height: 16px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-decoration: none;
 }
 
 .button-nav {
@@ -54,6 +57,12 @@
     display: flex;
     text-decoration: none;
     border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Recursive;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-transform: uppercase;
 }
 
 .button-nav:hover {
@@ -67,61 +76,40 @@
 
 }
 
-.menu-item > div, .button-nav > div {
-    color: white;
+.menu-item {
     font-size: 16px;
-    font-family: Recursive;
-    font-weight: 700px;
-    word-wrap: break-word;
-}
-
-.button-nav > div {
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-
-.margin-hero {
-    padding: 300;
-}
-
-.content-infos {
-    height: 100vh;
-    flex-direction: column;
-    
-}
-
-.size-content {
-    top: 10% !important; 
-    left: 10%;
-    width: 50%;
-}
-
-.title {
-    color: #010101;
-    font-size: 36px;
-    font-family: Recursive;
-    font-weight: 800;
-    text-transform: uppercase;
-    word-wrap: break-word;
-    text-align: center;
-}
-
-.subtitle {
-    width: 480px;
-    color: #010101;
-    font-size: 24px;
     font-family: Recursive;
     font-weight: 400;
-    line-height: 30px;
-    word-wrap: break-word;
 }
+
+.activo {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Recursive;
+    font-weight: 800;
+}
+
+/*Tamanho do background verde*/
+
+.bg-section {
+    width: 90%; 
+}
+
+/*Tamanho do card-hero*/
+.card-1 {
+    width: 90%;
+}
+
+.card-2 {
+    width: 25%;
+}
+
+/*Regras section paragráfo CEO*/
 
 .title-ceo {
     color: #ffffff;
-    font-size: 36px;
     font-family: Recursive;
+    font-size: 40px;
     font-weight: 800;
     text-transform: uppercase;
     word-wrap: break-word;
@@ -131,23 +119,40 @@
 .parag-ceo {
     
     color: #ffffff;
-    font-size: 16px;
     font-family: Recursive;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     word-wrap: break-word;
 }
 
-.bg-section2 {
-    width: 90%;
-    
-}
+/*Button Send*/
 
-        
-.ceo {
-    max-width: 635px;
-}
-
-.card-1 {
+.button-send {
+    background: linear-gradient(360deg, #6CB754 0%, #374729 100%);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Recursive;
+    font-weight: 800;
+    word-wrap: break-word;
+    text-transform: uppercase;
     width: 20%;
 }
+
+.button-send:hover {
+
+    background: #92C154;
+    box-shadow: 4px 4px 0px #6BA03A;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex
+
+}
+

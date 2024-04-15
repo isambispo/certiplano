@@ -15,37 +15,92 @@
         <link rel="stylesheet" href="assets/scr/css/style.css">
 
     </head>
-    <body>
+    <body class="gradient-bg">
 
-        <!--Nav-->
-        <nav class="navbar navbar-expand fixed-top">
-            <div class="container-fluid">
-                
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo-nav.png" width="160">
-                    </a>
-                </div>
-                <div class="menu">
-                    <a href="index.html" class="menu-item">
-                        <div>Home</div>
-                    </a>
-                    <a href="Serviços1.html" class="menu-item">
-                        <div>Serviços</div>
-                    </a>
-                    <a href="Contactos.html" class="menu-item">
-                        <div>Contacto</div>
-                    </a>
-                    <a href="Parceria.html" class="menu-item">
-                        <div>Parceria</div>
-                    </a>
-                </div>
-                <a class="button button-nav p-3">
-                    <div>Acessar plataforma</div>
+        <!--Nav-->          
+        <nav class="navbar navbar-expand-md nav-gradiente">
+            <div class="container">
+                    
+                <a href="index.html" class="mx-lg-5 px-lg-5 navbar-brand">
+                    <img src="assets/img/logo-nav.png" alt="Logo Certiplano" class="img-fluid" width="200">
                 </a>
+            
+                <!--Botão responsivo para mobile--> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navresponsive" aria-controls="navresponsive" aria-label="Nav Responsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    
+                <!--Menu responsivo para mobile-->    
+                <div class="offcanvas offcanvas-end bg374729 d-inline-flex" tabindex="-1" id="navresponsive" aria-labelledby="navresponsivelabel">
+                    
+                    <div class="offcanvas-header justify-content-end align-items-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
 
+                    <div class="offcanvas-body justify-content-md-center align-items-md-center ">
+                        <ul class="navbar-nav flex-grow-1 pe-3">
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff px-lg-4" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff px-lg-4" href="Serviços1.html">Serviços</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff activo px-lg-4" href="Contactos.html">Contacto</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link colorfff px-lg-4" href="Parceria.html">Parceria</a>
+                            </li>
+                    </div>
+
+                    <form action="https://intranet.certiplano.pt/login">
+                        <button type="submit" class="button button-nav mx-5 p-3 d-sm-block d-md-none">
+                            <div>Acessar plataforma</div>
+                        </button>
+                    </form>
+                </div>
+
+                <form action="https://intranet.certiplano.pt/login">
+                    <button type="submit" class="button button-nav mx-5 p-3 d-none d-md-block">
+                        <div>Acessar plataforma</div>
+                    </button>
+                </form>
+                
             </div>
         </nav>
+
         
+        <!--Section 2 - Serviços-->
+        <section class="gradient-bg">
+            
+    
+            <div class="card gradient-bg justify-content-end align-items-end">
+                <img src="assets/img/bgverde-d.svg" class="card-img bg-section object-fit-cover" alt="bg">
+
+
+                <div class="card-img-overlay container p-5">
+                    <span class="font-800 color1d1d1d m-lg-5 p-lg-5">
+                        Contacto
+                    </span>
+                </div>
+              </div>
+
+        </section>        
+        
+         <!--Footer-->
+         <footer>
+
+            <div class="container justify-content-center align-items-center mb-2">
+                <img src="assets/img/footer-1.png" alt="footer1" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-2.png" alt="footer2" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-3.png" alt="footer3" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-4.png" alt="footer4" class="img-fluid p-lg-3 mx-lg-4">
+                <img src="assets/img/footer-5.png" alt="footer5" class="img-fluid p-lg-3 mx-lg-4">
+            </div>
+
+        </footer>
+
+                
+                  
     </body>
 </html>
